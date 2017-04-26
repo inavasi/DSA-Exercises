@@ -15,10 +15,11 @@ public class Stack<T> implements IStack<T> {
 	@Override
 	public void push(T t) {
 		if (size == items.length) {
-			
-			// a new length for the new array making it 1 if this is the first push
-			// otherwise increasing the length by 1
-			int newLenght = size == 0 ? 1 : size + 1;
+
+			// a new length for the new array making it 1 if this is the first
+			// push
+			// otherwise double the size
+			int newLenght = (size == 0) ? 1 : size * 2;
 			T[] newArray = (T[]) new Object[newLenght];
 
 			// copy all items from the current array to the new array
