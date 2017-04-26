@@ -7,7 +7,7 @@ package de.unistuttgart.dsass2017.ex01.p2;
  */
 public class Node<T> {
 
-	// obj is used to store an Object in the Node
+	// obj is a place holder to store an object
 	private T obj;
 	// next is a place holder for the next Item after this Node
 	private Node<T> next;
